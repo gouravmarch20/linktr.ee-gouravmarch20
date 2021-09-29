@@ -1,5 +1,10 @@
-
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400&display=swap");
+:root {
+  --dark-blue: #03203c;
+  --light-green-n: #39ff14;
+  --sky-blue-n: #6dd5ed;
+  --red-shade: #b9345a;
+}
 
 body {
   margin: 0;
@@ -15,7 +20,7 @@ canvas {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #b61924;
+  background-color: #03203c;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,17 +57,30 @@ canvas {
 .count-particles {
   border-radius: 0 0 3px 3px;
 }
+/*  global  */
+a {
+  color: var(--light-green-n);
+  text-decoration: none;
+}
 
 /* header */
 .hero {
   display: flex;
   justify-content: center;
+  /* background-color: black; */
+  /* color: red; */
+  margin-bottom: 1rem;
+  border-radius: 40% 10%;
 }
 .hero-heading {
-  margin-top: 1.5rem;
   text-align: center;
+  color: #6dd5ed;
+  font-family: "Courier New", Courier, monospace;
 }
-
+.hero-span {
+  color: red;
+  font-size: 1rem;
+}
 /* project url  */
 .popular-project {
   display: flex;
@@ -72,14 +90,42 @@ canvas {
   justify-content: center;
   /* align-items: center; */
 }
-h3 {
-  background-color: black;
+.project_name {
   padding: 1rem;
+  border-radius: 1rem;
   text-align: center;
+  font-weight: bolder;
+  font-family: "Montserrat Alternates", sans-serif;
 }
-/* article {
-  background-color: black;
-} */
+.project-bg {
+  background-color: #50dbb4;
+}
+.project-text-bg-one {
+  color: var(--dark-blue);
+  background-color: #4dd637;
+
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+.project-text-bg-two {
+  color: var(--dark-blue);
+  background-color: #5da3fa;
+  background-color: #f7cd2e;
+
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+.project-text-bg-three {
+  color: var(--dark-blue);
+  background-color: #5da3fa;
+
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+.fontawesome_style {
+  margin-left: 1.5rem;
+}
+
 /* core  */
 .container {
   position: relative;
@@ -100,27 +146,35 @@ footer {
   text-align: center;
   left: 0;
   bottom: 0;
-  width: 45%;
-  /* background-color: #03203c; */
+  width: 100%;
   color: white;
   padding: 0.3rem 0rem;
+  overflow: hidden;
+
+  /* background-color: black; */
 }
 .list-item-inline {
   display: inline;
   margin-right: 2rem;
 }
 .footer-date-mb {
-  margin-bottom: 2rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
 }
 @media only screen and (max-width: 655px) {
   footer {
+    height: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     margin-top: 1rem !important;
+    overflow: hidden;
 
     width: 100%;
-    background-color: black;
+    /* background-color: black; */
+  }
+  .footer-fontawsome {
+    font-size: 1rem !important;
   }
 }
