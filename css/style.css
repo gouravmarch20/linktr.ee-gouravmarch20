@@ -147,7 +147,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  color: white;
+  color: #F7CD2E;
   padding: 0.3rem 0rem;
   overflow: hidden;
 
@@ -175,6 +175,6 @@ footer {
     /* background-color: black; */
   }
   .footer-fontawsome {
-    font-size: 1rem !important;
+    font-size: 1.7rem !important;
   }
 }
