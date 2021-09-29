@@ -1,4 +1,6 @@
-/* ---- reset ---- */
+
+
+
 body {
   margin: 0;
   width: 100%;
@@ -52,18 +54,22 @@ canvas {
 }
 
 /* header */
-/* .hero {
+.hero {
   display: flex;
   justify-content: center;
 }
 .hero-heading {
   margin-top: 1.5rem;
-} */
+  text-align: center;
+}
 
 /* project url  */
 .popular-project {
   display: flex;
   flex-direction: column;
+  max-width: 700px;
+  margin: 0 auto;
+  justify-content: center;
   /* align-items: center; */
 }
 h3 {
@@ -87,16 +93,26 @@ h3 {
 /* footer  */
 
 footer {
+  display: flex;
+  flex-direction: column;
+
   position: fixed;
   text-align: center;
   left: 0;
   bottom: 0;
-  width: 40%;
-  background-color: #03203c;
+  width: 45%;
+  /* background-color: #03203c; */
   color: white;
+  padding: 0.3rem 0rem;
 }
-
-@media only screen and (max-width: 855px) {
+.list-item-inline {
+  display: inline;
+  margin-right: 2rem;
+}
+.footer-date-mb {
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 655px) {
   footer {
     display: flex;
     flex-direction: column;
