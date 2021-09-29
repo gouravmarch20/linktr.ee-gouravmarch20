@@ -78,7 +78,7 @@ a {
   font-family: "Courier New", Courier, monospace;
 }
 .hero-span {
-  color: red;
+  color: #F7CD2E;
   font-size: 1rem;
 }
 /* project url  */
@@ -148,6 +148,7 @@ footer {
   bottom: 0;
   width: 100%;
   color: #F7CD2E;
+  font-weight: bolder;
   padding: 0.3rem 0rem;
   overflow: hidden;
 
